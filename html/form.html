@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormSolution</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form action = "http://www.google.com">
+		<p>
+			<label for = "FirstName">First Name:</label>
+			<input id = "FirstName" type = "text" placeholder="John" required="true">
+
+			<label for = "LastName">Last Name:</label>
+			<input id = "LastName" type = "text" placeholder="Smith"
+			required="true">
+		</p>
+
+		<p>
+			<label for = "Male">Male</label>
+			<input name = "sex" type = "radio" id="Male">
+
+			<label for = "Female">Female</label>
+			<input name = "sex" type = "radio" id="Female">
+
+			<label for = "Other">Other</label>
+			<input name = "sex" type = "radio" id="Other">
+		</p>
+
+		<p>
+			<label for = "email">Email:</label>
+			<input id ="email" type = "email" required="true" placeholder="your email">
+
+			<label for ="password">Password:</label>
+			<input id = "password" type="password" minlength="5" maxlength="10" pattern = ".{5,10}"" required placeholder="password" required title = "password must be 5 and 10 characters">
+		</p>
+		
+		<p>
+			<label for="birthday">Birthday:</label>
+			<select>
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+			</select>
+			<select>
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+			</select>
+			<select>
+				<option>Year</option>
+				<option>2017</option>
+				<option>2016</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="agree">I agree to the terms and conditions</label>
+			<input id = "agree" type = "checkbox" required="true">
+		</p>
+
+		<input type="submit">
+	</form>
+
+</body>
+</html>
